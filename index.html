@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>Future Electric Company&reg;</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+@media only screen and (min-width: 600px) {
+.responsivetitlefec { font-size: 48px; !important} 
+}
+.w3-container.w3-center {height: 128px; !important}
+
+img { height: 200px; width: 200px}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:200px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">☰ Menu</a>
+  <hr>
+  <a href="#products" onclick="w3_close()" class="w3-bar-item w3-button">Products</a>
+  <hr>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Enquires</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    
+    <div class="w3-center w3-padding-16 responsivetitlefec">Future Electric Company&reg;</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+<hr>
+
+  <!-- First Photo Grid-->
+  <div class="w3-center w3-padding-16" id="products" style="font-size: 24px;">Our Products<br></div>
+  <div class="w3-center" style="font-size: 12px;">Click on any product category to view list of all items<br></div>
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter popup" style="padding-bottom:8px" onclick="popup1Function()">
+	<span class="popuptext" id="myPopup1"><p>item 1<br> item 2<br> item3<br></p></span>
+	  <div class="w3-card-4" style="width:100%">
+      <img src="wires.png" alt="wires" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Wires and Cables</p>
+	  </div>
+      </div>
+	</div>
+ 
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="pipes.png" alt="pipes" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Pipes and Fittings</p>
+	  </div>
+      </div>
+	</div>
+
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="mcb.jpeg" alt="mcb" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>MCB, RCCB and Distribution Boxes</p>
+	  </div>
+      </div>
+	</div>
+	  
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="trays.jpg" alt="cable tray" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>GI Cable Tray and Raceways</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="saddles.jpg" alt="accessories" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Wiring Accessories</p>
+	  </div>
+      </div>
+	</div>
+		
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="firecable.jpg" alt="fire cables" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Electrical Accessories for Fire Protection Systems</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="pvctrunking.jpg" alt="PVC Trunking" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>PVC Trunking</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="switchgears.jpg" alt="switchgears" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Switchgears</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="limitswitch.jpg" alt="elevator spares" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Elevator Spares</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="glands.jpg" alt="cable glands and lugs" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Cable Glands and Lugs</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="led.jpg" alt="led lights" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>LED Lights</p>
+	  </div>
+      </div>
+	</div>
+	
+	<div class="w3-quarter" style="padding-bottom:8px">
+	  <div class="w3-card-4" style="width:100%">
+      <img src="fans.jpg" alt="fans" style="width:100%">
+	  <div class="w3-container w3-center">
+      <p>Domestic and Industrial Fans</p>
+	  </div>
+      </div>
+	</div>
+	</div>
+	
+  <div w3-padding> &nbsp </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-padding-32 w3-center">  
+    <h3>Enquires</h3><br>
+     <p>Query Form</p>
+	 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1xSPzfhK7uiNG2qJf6vfYQXpldPYMqylPMSod4nE_AEyQeQ/viewform?embedded=true" width="50%" height="500px" frameborder="1" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+  
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32 w3-center">
+    <h3>Contact Us</h3>
+	  <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mumbai, India &nbsp; &nbsp; &nbsp;
+      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9920913655 &nbsp; &nbsp; &nbsp;
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: deepenkacheri@gmail.com<br><br>
+	  <a href="#products" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <p style="font-size:16px">Future Electric Company &reg;</p> 
+      <p style="font-size:10px">Website designed by <a href="https://www.linkedin.com/in/akshatkacheria/">Akshat Kacheria &copy; </a></p>
+  
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// When the user clicks on div, open the popup
+function popup1Function() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function popup2Function() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+function popup3Function() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+
+function popup4Function() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+
+function popup5Function() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show");
+}
+
+function popup6Function() {
+  var popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show");
+}
+
+function popup7Function() {
+  var popup = document.getElementById("myPopup7");
+  popup.classList.toggle("show");
+}
+
+function popup8Function() {
+  var popup = document.getElementById("myPopup8");
+  popup.classList.toggle("show");
+}
+
+function popup9Function() {
+  var popup = document.getElementById("myPopup9");
+  popup.classList.toggle("show");
+}
+
+function popup10Function() {
+  var popup = document.getElementById("myPopup10");
+  popup.classList.toggle("show");
+}
+
+function popup11Function() {
+  var popup = document.getElementById("myPopup11");
+  popup.classList.toggle("show");
+}
+
+function popup12Function() {
+  var popup = document.getElementById("myPopup12");
+  popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
