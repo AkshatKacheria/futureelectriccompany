@@ -93,21 +93,21 @@ img { height: 200px; width: 200px}
   <div class="w3-center" style="font-size: 12px;">Click on any product category to view list of all items<br></div>
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter popup" style="padding-bottom:8px" onclick="popup1Function()">
-	<span class="popuptext" id="myPopup1"><p>Housewire <br>Industrial Wires <br>Power Cables Flexible <br>Armoured Cables <br>Telephone Cables <br>Cat-5/Cat-6 <br>CCTV Cables <br>Elevator Cables <br>Evevator Display Cables <br>Elevator Travelling Cables </p></span>
+	<span class="popuptext" id="myPopup1"><p>Housewire <br>Industrial Wires <br>Power Cables Flexible <br>Armoured Cables <br>Telephone Cables <br>Cat-5/Cat-6 <br>CCTV Cables <br>Elevator Cables <br>Evevator Display Cables <br>Elevator Travelling Cables <br>click here to close list </p></span>
 	  <div class="w3-card-4" style="width:100%">
       <img src="wires.png" alt="wires" style="width:100%">
 	  <div class="w3-container w3-center">
-      <p>Wires and Cables</p>
+      <p>Wires and Cables <br>click here</p>
 	  </div>
       </div>
 	</div>
  
 	<div class="w3-quarter popup" style="padding-bottom:8px" onclick="popup2Function()">
-	 <span class="popuptext" id="myPopup2"><p>PVC Conduit Pipes <br>PVC Flexible Pipes <br>Steelwire Reinforced Pipes <br>M.S Conduits <br>G.I Conduits <br>HDPE Pipes <br>All Pipe Fittings & Accessories </p></span>
+	 <span class="popuptext" id="myPopup2"><p>PVC Conduit Pipes <br>PVC Flexible Pipes <br>Steelwire Reinforced Pipes <br>M.S Conduits <br>G.I Conduits <br>HDPE Pipes <br>All Pipe Fittings & Accessories <br>click here to close list </p></span>
 	  <div class="w3-card-4" style="width:100%">
       <img src="pipes.png" alt="pipes" style="width:100%">
 	  <div class="w3-container w3-center">
-      <p>Pipes and Fittings</p>
+      <p>Pipes and Fittings  <br>click here</p>
 	  </div>
       </div>
 	</div>
@@ -131,11 +131,11 @@ img { height: 200px; width: 200px}
 	</div>
 	
 	<div class="w3-quarter popup" style="padding-bottom:8px" onclick="popup5Function()">
-	 <span class="popuptext" id="myPopup5"><p>Screws - G.I/Brass/S.S <br>Wall Plugs - Wooden/PVC <br>Saddles <br>PVC Insulation Tapes <br> <br>click to close list of items</p></span>
+	 <span class="popuptext" id="myPopup5"><p>Screws - G.I/Brass/S.S <br>Wall Plugs - Wooden/PVC <br>Saddles <br>PVC Insulation Tapes <br> <br>click to close list of items <br>click here to close list</p></span>
 	  <div class="w3-card-4" style="width:100%">
       <img src="saddles.jpg" alt="accessories" style="width:100%">
 	  <div class="w3-container w3-center">
-      <p>Wiring Accessories</p>
+      <p>Wiring Accessories  <br>click here</p>
 	  </div>
       </div>
 	</div>
@@ -167,11 +167,12 @@ img { height: 200px; width: 200px}
       </div>
 	</div>
 	
-	<div class="w3-quarter" style="padding-bottom:8px">
-	  <div class="w3-card-4" style="width:100%">
+	<div class="w3-quarter popup" style="padding-bottom:8px" onclick="popup9Function()">
+	 <span class="popuptext" id="myPopup9"><p>Brake Liner <br>Pit Switch <br>PLA Relay <br>click here to close list</p></span>
+	<div class="w3-card-4" style="width:100%">	  
       <img src="limitswitch.jpg" alt="elevator spares" style="width:100%">
 	  <div class="w3-container w3-center">
-      <p>Elevator Spares</p>
+      <p>Elevator Spares  <br>click here</p>
 	  </div>
       </div>
 	</div>
@@ -254,48 +255,13 @@ function popup2Function() {
   popup.classList.toggle("show");
 }
 
-function popup3Function() {
-  var popup = document.getElementById("myPopup3");
-  popup.classList.toggle("show");
-}
-
-function popup4Function() {
-  var popup = document.getElementById("myPopup4");
-  popup.classList.toggle("show");
-}
-
 function popup5Function() {
   var popup = document.getElementById("myPopup5");
   popup.classList.toggle("show");
 }
 
-function popup6Function() {
-  var popup = document.getElementById("myPopup6");
-  popup.classList.toggle("show");
-}
-
-function popup7Function() {
-  var popup = document.getElementById("myPopup7");
-  popup.classList.toggle("show");
-}
-
-function popup8Function() {
-  var popup = document.getElementById("myPopup8");
-  popup.classList.toggle("show");
-}
-
 function popup9Function() {
   var popup = document.getElementById("myPopup9");
-  popup.classList.toggle("show");
-}
-
-function popup10Function() {
-  var popup = document.getElementById("myPopup10");
-  popup.classList.toggle("show");
-}
-
-function popup11Function() {
-  var popup = document.getElementById("myPopup11");
   popup.classList.toggle("show");
 }
 
